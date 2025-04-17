@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.otp-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.otp-box {
+  background: #f9f9f9;
+  padding: 60px 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  width: 520px;
+}
+
+.otp-logo {
+  width: 200px;
+  margin-bottom: 12px;
+}
+
+.otp-title {
+  color: #993399;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.otp-message {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.otp-inputs input {
+  width: 52px;
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.otp-inputs input:focus {
+  border-color: #1366e8;
+  outline: none;
+}
+
+.otp-button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1366e8;
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.otp-button:hover {
+  background-color: #0b4ec0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.otp-support {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.otp-languages {
+  font-size: 14px;
+  color: #666;
+}
+
+.otp-languages .disabled {
+  color: #aaa;
+}
+
+.otp-languages .active {
+  font-weight: bold;
+  color: #000;
+}
+
+.otp-footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ccc;
 }
